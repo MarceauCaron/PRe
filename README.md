@@ -23,13 +23,14 @@ This repository provides algorithms to compute Map-Matching, as well as Context 
 
 # Open Street Map (OSM)
 Open Street Map provides spatial information. It is here needed to import the roadnetwork, the railways and the tramway stations.
-The osm files can be generated from a osm.pbf, foundable at :
+The osm files can be generated from a osm.pbf, foundables at :
 
 https://download.geofabrik.de/
 
-The gpx files contained in this repo are recorded in Brussels, Belgium, the specific file is :
+The gpx files contained in this repo are recorded in Brussels. Then the specific file needed is :
 
 https://download.geofabrik.de/europe/belgium-latest.osm.pbf
+
 
 Then, the tool osmosis is needed, foundable at :
 
