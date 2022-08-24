@@ -117,14 +117,14 @@ for(i in 1:length(tableiddd)){
 
 library(nor1mix)
 
-dinguerie=(ytarace-yf)
+dii=(ytr-yf)
 
 for(i in 1:length(x)){
-  if (dinguerie[i]<=0){
-    dinguerie[i]=0
+  if (dii[i]<=0){
+    dii[i]=0
   }
 }
-plot(x,dinguerie)
+plot(x,dii)
 mfd=1.2
 sdfd=0.1
 yfd=dnorm(x, mfd,sdfd)/4
