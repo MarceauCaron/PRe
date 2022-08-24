@@ -1,3 +1,8 @@
+# Introduction
+
+This repository provides algorithms to compute Map-Matching, as well as Context Matching for fishing vessels and public transport user.
+
+
 # Required packages in C++
 - iostream 
 -  vector 
@@ -12,14 +17,19 @@
 -  random 
 # Required packages in python
 - matplotlib
-- sys
+- os-sys
 - nbformat
 
 
-# OSM files
+# Open Street Map (OSM)
+Open Street Map provides spatial information. It is here needed to import the roadnetwork, the railways and the tramway stations.
 The osm files can be generated from a osm.pbf, foundable at :
 
 https://download.geofabrik.de/
+
+The gpx files contained in this repo are recorded in Brussels, Belgium, the specific file is :
+
+https://download.geofabrik.de/europe/belgium-latest.osm.pbf
 
 Then, the tool osmosis is needed, foundable at :
 
@@ -46,6 +56,8 @@ osmosis --read-pbf belgium-latest.osm.pbf --node-key-value keyValueList="public_
 
 
 # Map Matching
+The objective of Map-Matching is to match spatial records of a vehicle with the actual path taken on the road network.
+
 
 ## Set up 
 The trajectory must be a GPX file, the road data are extracted from a OSM file
